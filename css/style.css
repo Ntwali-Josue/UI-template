@@ -1,8 +1,76 @@
-*{
-    background-color: #000;
+*{   
+    box-sizing: border-box; 
 }
 
-h1{
-    color: #ffffff;
+body{
+    background-color: #000;
+    margin-top: 50px;
+}
+
+.wrapper{
+    max-width: 400px;
+    margin: auto 35%;
+    width: 100%;
+    background: #cfcfcf;
+    padding: 25px;
+    border-radius: 15px; 
+    box-shadow: 5px 5px 5px rgb(6, 33, 187); 
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#name { 
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#email {
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.text-area {
+    border: 1px solid #e0e0e0;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.btn input[type="submit"]{ 
+    border: 0px;
+    margin: auto 30px;
+    padding: 10px;
+    text-align: center;
+    width: 80%;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+footer {
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
     text-align: center;
 }
+
+.container a { 
+    text-decoration:none;
+    color: #fff; 
+    letter-spacing: 10px;
+    font-size: 30px;
+}
+
