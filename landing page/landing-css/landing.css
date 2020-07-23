@@ -13,6 +13,7 @@ header {
 
 header h1 {
     float: left;
+    padding-left: 20px;
 }
 
 .nav-links {
@@ -28,6 +29,11 @@ header h1 {
 .nav-links ul li a{
     text-decoration: none;
     color: #fff;
+    font-size: 20px;
+}
+
+.nav-links ul li a:hover {
+    text-decoration: underline;
 }
 
 main {
@@ -54,7 +60,6 @@ main {
 
 .intro button {
     border: 0px;
-    /* margin: auto 30px; */
     margin-bottom: 50px;
     padding: 10px;
     text-align: center;

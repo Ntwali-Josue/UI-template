@@ -4,12 +4,46 @@
 
 body{
     background-color: #000;
-    margin-top: 50px;
+    margin: 0;
+}
+
+header { 
+    background-color: #000000;
+    color: #fff; 
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    /* margin-bottom: 100px; */
+}
+
+header h1 {
+    float: left;
+    padding-left: 20px;
+}
+
+.nav-links {
+    float: right;
+    margin-top: 10px;
+}
+
+.nav-links ul li {
+    display: inline;
+    padding-right: 30px;
+}
+
+.nav-links ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    margin: auto 35%;
+    padding-top: 100px;
 }
 
 .wrapper{
     max-width: 400px;
-    margin: auto 35%;
+    /* margin-top: 100px; */
     width: 100%;
     background: #cfcfcf;
     padding: 25px;
@@ -57,6 +91,7 @@ h1 {
     border-radius: 25px;
     cursor: pointer;
 }
+
 
 footer {
     padding: 20px;
