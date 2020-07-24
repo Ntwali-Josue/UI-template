@@ -13,7 +13,6 @@ header {
     position: fixed;
     width: 100%;
     margin: 0;
-    /* margin-bottom: 100px; */
 }
 
 header h1 {
@@ -48,7 +47,6 @@ main {
 
 .wrapper{
     max-width: 400px;
-    /* margin-top: 100px; */
     width: 100%;
     background: #cfcfcf;
     padding: 25px;
