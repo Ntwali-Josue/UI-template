@@ -34,6 +34,11 @@ header h1 {
 .nav-links ul li a{
     text-decoration: none;
     color: #fff;
+    font-size: 20px;
+}
+
+.nav-links ul li a:hover {
+    text-decoration: underline;
 }
 
 main {
@@ -109,3 +114,7 @@ footer {
     font-size: 30px;
 }
 
+.container a:hover {
+    font-size: 35px;
+    color: #112066;
+}
