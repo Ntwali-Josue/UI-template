@@ -51,7 +51,7 @@ main {
     background: #cfcfcf;
     padding: 25px;
     border-radius: 15px; 
-    box-shadow: 5px 5px 5px rgb(6, 33, 187); 
+    box-shadow: 5px 5px 5px #0621bb; 
 }
 
 h1 {
@@ -95,6 +95,11 @@ h1 {
     cursor: pointer;
 }
 
+.btn input:hover {
+    width: 85%; 
+    height: 40px;
+    text-decoration: underline;
+}
 
 footer {
     padding: 20px;
@@ -113,6 +118,16 @@ footer {
 }
 
 .container a:hover {
-    font-size: 35px;
     color: #112066;
+}
+
+#error_message{
+    margin-bottom: 20px;
+    background: #000;
+    color: #fff;
+    padding: 0px;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.5s ease;
+    border-radius: 10px;
 }
