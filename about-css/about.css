@@ -1,0 +1,102 @@
+header { 
+    background-color: #000;
+    color: #fff; 
+    position: fixed;
+    width: 100%;
+    /* margin-bottom: 500px; */
+    top: 0;
+    /* bottom: 0; */
+}
+
+header h1 {
+    float: left;
+    padding-left: 20px;
+}
+
+.nav-links {
+    float: right;
+    margin-top: 10px;
+}
+
+.nav-links ul li {
+    display: inline;
+    padding-right: 30px;
+}
+
+.nav-links ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.nav-links ul li a:hover {
+    text-decoration: underline;
+}
+
+body {
+    /* height: 100vh;    */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    margin: 0;
+    padding: 0;
+    /* background-color: #112066; */
+    /* color:white/ */
+}
+
+section {
+    margin-top: 100px;
+    width: 100%;
+    text-align: center
+}
+
+.intro {
+    width: 60%;
+    float: left;
+}
+
+.intro h2 {
+    margin-bottom: 25px;
+}
+
+.img-wrap {
+    width: 40%;
+    float: right;
+}
+
+.img-wrap img {
+    width: 90%;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #999999;
+}
+
+.clear {
+    clear: both;
+}
+
+footer {
+    background-color: #000;
+    padding: 20px;
+    /* margin: 0 */
+}
+
+.social-medias {
+    /* width: 70%; */
+    text-align: center;
+    /* margin-left: 30px */
+}
+
+.social-medias a { 
+    text-decoration:none;
+    color: #fff; 
+    letter-spacing: 10px;
+    font-size: 30px;
+    padding-right: 10px;
+}
+
+.social-medias a:hover {
+    /* font-size: 35px; */
+    text-decoration: none;
+}
+
