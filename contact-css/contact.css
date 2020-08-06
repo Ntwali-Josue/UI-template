@@ -80,7 +80,7 @@ h1 {
     border-radius: 5px;
 }
 
-.btn input[type="submit"]{ 
+.btn #submit{ 
     border: 0px;
     margin: auto 30px;
     padding: 10px;
@@ -95,7 +95,7 @@ h1 {
     cursor: pointer;
 }
 
-.btn input:hover {
+.btn #submit:hover {
     width: 85%; 
     height: 40px;
     text-decoration: underline;

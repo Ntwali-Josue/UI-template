@@ -7,24 +7,31 @@ const firebaseConfig = {
     messagingSenderId: "11072010879",
     appId: "1:11072010879:web:1a2371176aa86eb4281d4a",
     measurementId: "G-FRSJSW9871"
-}
-
-const firebase = require("firebase");
-// Required for side-effects
-require("firebase/firestore");
+};
 
 firebase.initializeApp(firebaseConfig);
 
 //initialize firestore
-let db = firebase.firestore();
+// let db = firebase.firestore();
 // console.info(db)
 
-function validation () {
+// Reference messages collection
+var messagesRef = firebase.database().ref('contact-info');
+
+// Listen for form submit
+document.getElementById('contactForm').addEventListener('submit', submitForm);
+
+
+function submitForm(e){
+    e.preventDefault();
 
     //get values
-    let name = document.getElementById("name").value;
-    let email = document.getElementById("email").value;
-    let message = document.getElementById("msg").value;
+    var name = getInputVal('name');
+    var email = getInputVal('email');
+    var message = getInputVal('msg');
+
+    // Save message
+    saveMessage(name, email, message);
 
     error_message.style.padding = "10px";
     let text;
@@ -53,24 +60,18 @@ function validation () {
     }
 }
 
-//create and adding data
+    // Function to get form values
+    function getInputVal(id){
+        return document.getElementById(id).value;
+    }
+    
 
-db.collection("contact-info").add({
-    name: name,
-    email: email,
-    message: message
-})
-.then(function(docRef){
-    console.log("successfully added your info: ", docRef.id);
-})
-.catch(function(error){
-    console.error("Failed to add your info: ",error);
-})
-
-//reading data
-
-db.collection("contact-info").get().then((querySnapshot) =>{
-    querySnapshot.forEach((doc) =>{
-        console.log(`${doc.id} => ${doc.data()}`)
-    })
-})
+// Save message to firebase
+function saveMessage(name, email, message){
+    var newMessageRef = messagesRef.push();
+    newMessageRef.set({
+      name: name,
+      email:email,
+      message:message
+    });
+}
