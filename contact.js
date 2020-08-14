@@ -33,6 +33,9 @@ function submitForm(e){
     // Save message
     saveMessage(name, email, message); 
 
+    //clear the inputs-field
+    document.getElementById('contactForm').reset();
+
     error_message.style.padding = "10px";
     let text;
 
