@@ -79,5 +79,5 @@ function saveMessage(name, email, message){
       email:email,
       message:message
     });
-    console.log("Your message is saved" + newMessageRef);
+    console.log("Your message is saved" + name + '' + email + '' + message);
 }
