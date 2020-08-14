@@ -31,7 +31,7 @@ function submitForm(e){
     var message = getInputVal('msg');
 
     // Save message
-    saveMessage(name, email, message);
+    saveMessage(name, email, message); 
 
     error_message.style.padding = "10px";
     let text;
