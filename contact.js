@@ -33,9 +33,6 @@ function submitForm(e){
     // Save message
     saveMessage(name, email, message); 
 
-    //clear the inputs-field
-    document.getElementById('contactForm').reset();
-
     error_message.style.padding = "10px";
     let text;
 
@@ -59,9 +56,14 @@ function submitForm(e){
     else{ 
     text= "Thank you for Your feedback,we'll reach out to you soon!";
     error_message.innerHTML = text;
+        //clear the inputs-field
+        document.getElementById('contactForm').reset();
     return true;
     }
+
+
 }
+
 
     // Function to get form values
     function getInputVal(id){
@@ -77,4 +79,5 @@ function saveMessage(name, email, message){
       email:email,
       message:message
     });
+    console.log("Your message is saved" + newMessageRef);
 }
