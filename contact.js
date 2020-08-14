@@ -60,8 +60,6 @@ function submitForm(e){
         document.getElementById('contactForm').reset();
     return true;
     }
-
-
 }
 
 
@@ -79,5 +77,5 @@ function saveMessage(name, email, message){
       email:email,
       message:message
     });
-    console.log("Your message is saved" + name + '' + email + '' + message);
+    console.log("Your message is saved" + newMessageRef);
 }
